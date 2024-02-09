@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+	<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-5gl3{color:#93a1a1;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+		.painel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: Orange;
+        }
+        
+        .botao {
+            padding: 0;
+            background-color: Orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+			margin: 5px;
+        }
+        
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+			color:white;
+			text-shadow: 0px 5px 1px rgba(0,0,0,0.6);
+        }
+		.btn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #444444;
+  padding: 3px;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  color: #eeeded;
+  background-color: #9b5050; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+ .dialog-box {          
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			height: 25vh;
+        }
+	 .painelinferior {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            position: flex;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+	body {
+		background-color: lightblue;
+	}
+</style>
+  </head>
+  <body style="margin:0;">
+   <div class="painel">
+	 <div class="titulo">Águias Ferozes</div>
+	 <div class="botão" style="cursor:pointer;" onclick="openDialog()"><img src="C:\Users\55889\Desktop\Site dos desbravadores\multipleline_114207.ico" alt="Ícone"></div>
+	  </div>
+	    <div id="dialogBox" class="dialog-box">
+		<a href="https://forms.gle/13pxiAeJbHznfPE1A">
+		<button class="botão" title="Cadastre-se"><img src="C:\Users\55889\Desktop\Site dos desbravadores\bootloader_users_person_people_6080.ico" alt="Ícone"></button>
+		</a>
+		<a href="Informações.txt">
+		<button class="botão" title="Informações"><img src="C:\Users\55889\Desktop\Site dos desbravadores\information_info_1565.ico" alt="Ícone"></button>
+		</a>
+		<button class="botão" title="Sair" onclick="javascript:window.open('', '_self', '').close()"><img src="C:\Users\55889\Desktop\Site dos desbravadores\exit_close_error_15565.ico" alt="Ícone"></button>
+        <button class="btn" onclick="closeDialog()">Fechar</button>
+    </div>
+	&nbsp;
+		&nbsp;
+		&nbsp;
+		<div style="text-align:center;" class="tg">
+	<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-1wig">Nome</th>
+    <th class="tg-1wig">Idade</th>
+    <th class="tg-1wig">Gênero</th>
+    <th class="tg-1wig">Unidade</th>
+    <th class="tg-1wig">Patente</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-5gl3"><span style="color:#333">Dâmaris Nunes</span></td>
+    <td class="tg-baqh">25</td>
+    <td class="tg-baqh">Feminino</td>
+    <td class="tg-baqh">*</td>
+    <td class="tg-baqh">Diretora</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Carlos Augusto</td>
+    <td class="tg-baqh">35</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">*</td>
+    <td class="tg-baqh">Conselheiro Geral</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Antônio Tavares</td>
+    <td class="tg-baqh">13</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Corujas</td>
+    <td class="tg-baqh">Capitão</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Antony Gabriel</td>
+    <td class="tg-baqh">11</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Corujas</td>
+    <td class="tg-baqh">Secretário</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Daniel *******</td>
+    <td class="tg-baqh">14</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões </td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Eloane *******</td>
+    <td class="tg-baqh">13</td>
+    <td class="tg-baqh">Feminino</td>
+    <td class="tg-baqh">Águia Coroada</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Erlon *******</td>
+    <td class="tg-baqh">15</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ítalo *******</td>
+    <td class="tg-baqh">15</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">João Cícero</td>
+    <td class="tg-baqh">13</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Jhonatan *******</td>
+    <td class="tg-baqh">13</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">José Eduardo</td>
+    <td class="tg-baqh">13</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Gaviões</td>
+    <td class="tg-baqh">Capitão</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Júlia *******</td>
+    <td class="tg-baqh">10</td>
+    <td class="tg-baqh">Feminino</td>
+    <td class="tg-baqh">Águia Coroada</td>
+    <td class="tg-baqh">Secretária</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Leandro *******</td>
+    <td class="tg-baqh">12</td>
+    <td class="tg-baqh">Masculino</td>
+    <td class="tg-baqh">Corujas</td>
+    <td class="tg-baqh">Conselheiro</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Yasmin *******</td>
+    <td class="tg-baqh">10</td>
+    <td class="tg-baqh">Feminino</td>
+    <td class="tg-baqh">Águia Coroada</td>
+    <td class="tg-baqh">Capitã</td>
+  </tr>
+</tbody>
+</table>
+</div>
+&nbsp;
+		&nbsp;
+		&nbsp;
+<div class="painelinferior">
+		 <a href="https://www.adventistas.org/pt/" style="color:gray;">Igreja Adventista do Sétimo Dia</a>
+		&nbsp;
+		&nbsp;
+		&nbsp;
+		<a href="https://clubes.adventistas.org/br/aspa/7223/agata/l" style="color:gray;">Clube: Ágata</a>
+    </div>
+	 <script>
+        function openDialog() {
+            document.getElementById("dialogBox").style.display = "block";
+        }
+
+        function closeDialog() {
+            document.getElementById("dialogBox").style.display = "none";
+        }
+		
+    </script>
+  </body>
+</html>
+
